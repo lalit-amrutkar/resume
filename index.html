@@ -13,24 +13,23 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <style>
-        * {
-            background: rgb(23, 18, 18);
-            color: #c7b5b5;
+        * {            
             scroll-behavior: smooth;
         }
 
         h4,
         h5 {
-            color: rgb(203, 21, 219);
+            color: #314998;
             font-weight: bold;
             font-size: 16px;
         }
 
         .container {
-            border-top: 15px solid rgb(203, 21, 219);
-            border-bottom: 15px solid rgb(203, 21, 219);
-            box-shadow: 0 0 20px rgba(95, 93, 93, 0.5); /* box shadow with black color and transparency */
+            border-top: 15px solid #314998;
+            border-bottom: 15px solid #f5b453;
+            box-shadow: 0 0 20px rgba(147, 145, 145, 0.5); /* box shadow with black color and transparency */
             display: none;
+            background: #fff;
         }
 
         p {
@@ -38,7 +37,7 @@
         }
 
         .imgAlign {
-            border: 2px solid rgb(203, 21, 219);
+            border: 2px solid #f5b453;
             border-radius: 5px;
             margin-left: 45px;
             margin-bottom: 5px;
@@ -78,7 +77,7 @@
             font-size: 18px;
             border: none;
             outline: none;
-            background-color: rgb(203, 21, 219);
+            background-color: #314998;
             cursor: pointer;
             padding: 15px;
             border-radius: 50px;
@@ -243,11 +242,12 @@
         .loader {
             height: 30px;
             aspect-ratio: 2.5;
-            --_g: no-repeat radial-gradient(farthest-side, rgb(203, 21, 219) 90%,#ad242400);
+            --_g: no-repeat radial-gradient(farthest-side, #314998 90%,#ad242400);
             background:var(--_g), var(--_g), var(--_g), var(--_g);
             background-size: 20% 50%;
             animation: l43 1s infinite linear; 
             align-items: center;
+            color: black;
         }
         @keyframes l43 {
             0%     {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
@@ -329,7 +329,7 @@
 
 </head>
 
-<body style="background: rgb(23, 18, 18)">
+<body>
     <div id="initialContent" class="loaderContainer">
         <div class="loader"></div>
       </div>
@@ -471,7 +471,7 @@
             </div>
         </div>
     </div>
-    <button  onclick="scrollToTop()" class="btnTop" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="background: transparent;"></i></button>
+    <button  onclick="scrollToTop()" class="btnTop" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="background: transparent;color:#fff;font-size:10"></i></button>
 
 </body>
 
