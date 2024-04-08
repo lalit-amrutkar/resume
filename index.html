@@ -318,7 +318,6 @@
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-            console.log(document.body.scrollTop)
             if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
             document.getElementById("topBtn").style.display = "block";
             } else {
@@ -375,6 +374,7 @@
                     </div>
                     <div class="pt-1"></div>
                     <h5 class="tracking-in-expand-fwd">LANGUAGES</h5>
+                    <div class="horizontal-line"></div>
                     <ul>
                         <li>English</li>
                         (Professional working proficiency)
@@ -383,11 +383,6 @@
                         <li>Marathi</li>
                         (Native or bilingual proficiency)
                     </ul>
-                    <div class="horizontal-line"></div>
-
-                    <div class="pt-1"></div>
-                    <h5 class="tracking-in-expand-fwd">HOBBIES</h5>
-                    <div class="horizontal-line"></div>
                 </div>
                 <div class="col-1 vertical-line"></div> <!-- Vertical line -->
                 <div class="col-8 ml-n5">
@@ -476,7 +471,7 @@
             </div>
         </div>
     </div>
-    <!-- <button  onclick="scrollToTop()" class="btnTop" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="background: transparent;"></i></button> -->
+    <button  onclick="scrollToTop()" class="btnTop" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up" style="background: transparent;"></i></button>
 
 </body>
 
