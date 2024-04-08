@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -267,7 +266,36 @@
             justify-content: center;
             align-items: center;
           }
+          @media only screen and (max-width: 768px) {
+            /* Media query for tablets and smaller devices */
+            
+            /* Adjustments for the container */
+            .container {
+              padding: 10px; /* Example: reduce padding for smaller screens */
+            }
+          
+            /* Adjustments for the columns */
+            .col-3,
+            .col-1,
+            .col-8 {
+              width: 100% !important; /* Make columns full width on smaller screens */
+              margin-left: 0 !important; /* Remove margin for smaller screens */
+            }
+          
+            /* Adjustments for the loader */
+            .loaderContainer {
+              height: 100%; /* Make the loader container take the full height of the screen */
+            }
+          
+            /* Adjustments for the profile image */
+            .imgAlign {
+              margin-left: 0; /* Reset margin for the profile image */
+              margin-bottom: 10px; /* Increase margin bottom for smaller screens */
+            }
+          }
+          
     </style>
+    
     <script>
 
         window.onload = function() {
